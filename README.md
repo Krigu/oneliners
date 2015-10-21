@@ -1,4 +1,4 @@
-# Onelinres 
+# Oneliners 
 
 Some small, random but possibly useful snippets for various tasks for oblivious shell users
 
