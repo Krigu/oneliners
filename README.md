@@ -7,6 +7,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 **Find process that is using a particular port**
 
     sudo netstat -lpn | grep :8080
+    
+**Scan wifi channels**
+
+    sudo iwlist wlan0 scan | grep \(Channel
 
 ## Docker 
 
