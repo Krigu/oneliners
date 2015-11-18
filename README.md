@@ -15,6 +15,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 **List of packages installed locally**
 
     dpkg -l
+    
+**List files from package(s).**
+    
+    dpkg -L <packagename>
 
 ## Docker 
 
