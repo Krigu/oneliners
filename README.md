@@ -12,6 +12,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     sudo iwlist wlan0 scan | grep \(Channel
 
+**List of packages installed locally**
+
+    dpkg -l
+
 ## Docker 
 
 **Remove all containers**
