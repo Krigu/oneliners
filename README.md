@@ -20,6 +20,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
     
     dpkg -L <packagename>
 
+**Restart Pulse Audio**
+    
+    pulseaudio -k && sudo alsa force-reload
+
 ## Docker 
 
 **Remove all containers**
