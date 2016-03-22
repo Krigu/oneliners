@@ -4,6 +4,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
 ## Miscellaneous
 
+**Output unique lines of a text file**
+
+    cat diff.txt | sed "s/^[ \t]*//" | sort | uniq
+
 **Find process that is using a particular port**
 
     sudo netstat -lpn | grep :8080
