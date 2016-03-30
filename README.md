@@ -7,6 +7,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 **Output unique lines of a text file**
 
     cat diff.txt | sed "s/^[ \t]*//" | sort | uniq
+    
+**Replace file content**
+
+    sed -i -e 's/foo/bar/g' filename
 
 **Find process that is using a particular port**
 
