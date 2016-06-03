@@ -8,7 +8,7 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     cat diff.txt | sed "s/^[ \t]*//" | sort | uniq
     
-** Find all filenames recursive and print them sorted **
+**Find all filenames recursive and print them sorted**
 
     find . -exec ls -dl \{\} \; | awk '{print $9}' | sort
     
