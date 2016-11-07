@@ -8,6 +8,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     cat diff.txt | sed "s/^[ \t]*//" | sort | uniq
     
+**Concat the content of all alphabetically orderd txt files**    
+    
+    find . -type f -name '*.txt' | sort | xargs cat 0 >> concat.txt
+    
 **Find all filenames recursive and print them sorted**
 
     find . -exec ls -dl \{\} \; | awk '{print $9}' | sort
@@ -35,6 +39,8 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 **Restart Pulse Audio**
     
     pulseaudio -k && sudo alsa force-reload
+   
+
 
 ## Docker 
 
