@@ -8,6 +8,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     cat diff.txt | sed "s/^[ \t]*//" | sort | uniq
     
+**Find content in file recursive**
+    
+    grep --include=*.sql -rnw . -e "pattern"
+    
 **Concat the content of all alphabetically orderd txt files**    
     
     find . -type f -name '*.txt' | sort | xargs cat 0 >> concat.txt
