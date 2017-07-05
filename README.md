@@ -18,11 +18,22 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
     
 **Find all filenames recursive and print them sorted**
 
-    find . -exec ls -dl \{\} \; | awk '{print $9}' | sort
+    find . -exec ls -dl \{\} \; | awk '{print $9}' | sort    
     
 **Replace file content**
 
     sed -i -e 's/foo/bar/g' filename
+    
+**Find all entities not in persistence.xml**    
+
+    egrep -lir --include=*.java "@Entity" . | awk -F"/" '{print $NF}' | awk -F"." '{print $1}' | while read -r file ; do     
+        if ! grep -q "$file" src/main/resources/META-INF/persistence.xml ;
+        then
+        echo "Missing entity $file"
+        fi
+    done    
+
+## System
 
 **Find process that is using a particular port**
 
