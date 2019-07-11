@@ -36,6 +36,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
         echo "Missing entity $file"
         fi
     done    
+    
+**Pulls all git repos in subdirectories**    
+
+    find . -type d -mindepth 1  -maxdepth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;   
 
 ## System
 
