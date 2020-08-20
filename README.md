@@ -24,6 +24,10 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     sed -i -e 's/foo/bar/g' filename
     
+**Remove empty lines from file**
+        
+    sed -i '/^$/d' file.txt
+    
 **Execute command in every subfolder**
 
     find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd" \;
