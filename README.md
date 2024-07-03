@@ -45,6 +45,16 @@ Some small, random but possibly useful snippets for various tasks for oblivious 
 
     find . -type d -mindepth 1  -maxdepth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;   
 
+## Image manipulation
+
+**Convert every JPG in current folder to PNG**
+
+    for image in *.jpg ;  do magick "$image" "${image%.*}.png" ; done
+
+**Optimize every PNG in current folder**
+
+    for image in *.png ;  do optipng "$image" ; done
+
 ## System
 
 **Find process that is using a particular port**
